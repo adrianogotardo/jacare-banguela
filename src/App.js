@@ -5,6 +5,7 @@ import jacareMotorista from './img/jacare-motorista.jpeg';
 import jacarePizza from './img/jacare-pizza.jpeg';
 import jacareMini from './img/jacare-mini.webp';
 import jacareBackground from './img/jacare-background.jpg';
+import livroNaGrama from './img/livro-e-prato-na-grama.jpg';
 
 export default function App() {
   function scrollToSection(id) {
@@ -18,7 +19,12 @@ export default function App() {
 
   return (
     <Body>
-      <Background style={{ backgroundImage: `url(${jacareBackground})` }}></Background>
+      <Background>
+        <BgHome style={{ backgroundImage: `url(${livroNaGrama})` }}></BgHome>
+        <BgAbout style={{ backgroundImage: `url(${livroNaGrama})` }}></BgAbout>
+        <BgAuthor style={{ backgroundImage: `url(${jacareBackground})` }}></BgAuthor>
+        <BgOrder style={{ backgroundImage: `url(${jacareBackground})` }}></BgOrder>
+      </Background>
       <Container>
         <Header>
           <Logo>O Jacaré Banguela</Logo>
@@ -31,6 +37,9 @@ export default function App() {
         </Header>
 
         <Section id="home">
+          {/* <BgHome>
+            <img src={livroNaGrama} alt='Livro na Grama'/>
+          </BgHome> */}
           <Content>
             <h2>Bem vindo ao site oficial do querido Jacaré Banguela!</h2>
             <p>Aqui você poderá conhecer um pouquinho mais do nosso amigo desdentado e do Gustavo, autor dessa aventura tâo divertida :)</p>
@@ -72,14 +81,33 @@ const Body = styled.div`
   position: relative;
 `;
 
-const Background = styled.div`
+ const Background = styled.div`
   z-index: -1;
-  width: 100vw;
+  width: 100vw  ;
   height: 400vh;
   position: absolute;
-  top: 0;
-  left: 0;
-  opacity: .05;
+  opacity: .5;
+`;
+
+const BgHome = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+`;
+
+const BgAbout = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
+
+const BgAuthor = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
+
+const BgOrder = styled.div`
+  width: 100vw;
+  height: 100vh;
 `;
 
 const Container = styled.div`
@@ -126,6 +154,7 @@ const NavItem = styled.div`
 `;
 
 const Section = styled.section`
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
