@@ -79,7 +79,7 @@ const Background = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .1;
+  opacity: .05;
 `;
 
 const Container = styled.div`
@@ -100,6 +100,11 @@ const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
   margin-left: 60px;
+  @media (max-width: 600px) {
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+  }
 `;
 
 const Nav = styled.nav`
@@ -107,6 +112,9 @@ const Nav = styled.nav`
   align-items: center;
   margin-left: auto;
   margin-right: 60px;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const NavItem = styled.div`
@@ -125,6 +133,14 @@ const Section = styled.section`
   scroll-snap-align: start;
   img {
     border-radius: 5px;
+  }
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 70vw;
+      margin: 50px 0;
+    }
   }
 `;
 
