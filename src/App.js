@@ -197,7 +197,7 @@ const AboutSection = styled.section`
   scroll-snap-align: start;
   img {
     height: auto;
-    max-width: 50vw;
+    max-width: 45vw;
   }
   div {
     margin: 0 70px 0 50px;
