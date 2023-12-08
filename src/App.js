@@ -87,14 +87,13 @@ const Body = styled.div`
 
  const Background = styled.div`
   z-index: -1;
-  width: 100vw  ;
+  width: 100%;
   height: 400vh;
   position: absolute;
-  opacity: .9;
 `;
 
 const BgHome = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -102,7 +101,7 @@ const BgHome = styled.div`
 `;
 
 const BgSection = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-size: cover;
 `;
@@ -162,7 +161,7 @@ const HomeSection = styled.section`
     height: 100vh;
   }
   div {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 70px 0 50px;
     color: #4e5e43;
     font-family: 'Ubuntu';
@@ -191,28 +190,29 @@ const HomeSection = styled.section`
 const AboutSection = styled.section`
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   scroll-snap-align: start;
   img {
-    height: 100vh;
+    height: auto;
+    max-width: 50vw;
   }
   div {
-    max-width: 1200px;
     margin: 0 70px 0 50px;
     color: white;
     font-family: 'Ubuntu';
     h2 {
       font-weight: bold;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 30px;
+      line-height: 36px;
       margin: 0 0 50px 0;
     }
     p {
       margin: 30px 0 0 0;
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 22px;
+      line-height: 30px;
     }
   }
   @media (max-width: 600px) {
@@ -233,24 +233,24 @@ const AuthorSection = styled.section`
   justify-content: center;
   scroll-snap-align: start;
   img {
-    height: 100vh;
+    height: auto;
+    max-width: 60vw;
   }
   div {
     text-align: end;
-    max-width: 1200px;
     margin: 0 70px 0 50px;
     color: #4e5e43;
     font-family: 'Ubuntu';
     h2 {
       font-weight: bold;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 30px;
+      line-height: 36px;
       margin: 0 0 50px 0;
     }
     p {
       margin: 30px 0 0 0;
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 22px;
+      line-height: 30px;
     }
   }
   @media (max-width: 600px) {
@@ -274,20 +274,20 @@ const OrderSection = styled.div`
     height: 100vh;
   }
   div {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 70px 0 50px;
     color: white;
     font-family: 'Ubuntu';
     h2 {
       font-weight: bold;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 30px;
+      line-height: 36px;
       margin: 0 0 50px 0;
     }
     p {
       margin: 30px 0 0 0;
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 22px;
+      line-height: 30px;
     }
     a {
       color: inherit;
